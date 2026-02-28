@@ -44,5 +44,5 @@ const reset = () => {
 const end = () => {
     reset();
     countPx = -1500;
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
 };
