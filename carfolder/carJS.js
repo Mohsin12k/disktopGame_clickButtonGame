@@ -37,7 +37,6 @@ const stop = () => {
 
 const reset = () => {
     stop();
-    countPx = -1500;
     car.style.marginLeft = countPx + "px";
 };
 
