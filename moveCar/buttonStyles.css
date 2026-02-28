@@ -1,0 +1,88 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main styles */
+
+.main {
+    background-color: #777;
+    width: 40%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #000;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    gap: 1rem;
+}
+
+.main:focus, .main:hover {
+    box-shadow: 0 0 20px 5px #000;
+}
+
+/* circle styles */
+
+.circle {
+    position: relative;
+    width: clamp(50px, min(30vw, 60vh), 350px);
+    height: clamp(50px, min(30vw, 60vh), 350px);
+    background: conic-gradient(chartreuse 0deg, lightgray 0deg);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.circle:focus, .circle:hover {
+    border: 2px solid #348652;
+    box-shadow: 0 0 20px 5px #4ade80;
+}
+
+/* circle on the top after */
+.circle::after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background-color: #000;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* percentage */
+.percentage {
+    position: relative;
+    font-size: clamp(0.5rem, min(2vw, 3.5vh), 2rem);
+    font-weight: bold;
+    color: #fff;
+    z-index: 10;
+}
+
+/* paragraph */
+.para {
+    font-size: clamp(0.5rem, min(2vw, 3.5vh), 2.2rem);
+    font-weight: bold;
+    color: #eee;
+}

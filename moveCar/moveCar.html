@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Car</title>
+    <link rel="shortcut icon" href="images/car.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="carStyles.css">
+    <script src="carJS.js" defer></script>
+
+</head>
+<body>
+   
+        <header class="header">
+            <h2 class="header-h2">Move Car</h2>
+            <nav class="header-nav">
+                <button type="button" onclick="start()">Start</button>
+                <button type="button" onclick="stop()">Stop</button>
+                <button type="button" onclick="reset()">Reset</button>
+                <button type="button" onclick="end()">End Game</button>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="main-section">
+                <img src="images/city.jpeg" alt="city" class="city" width="500px" height="500px">
+                <img src="images/car.jpeg" alt="car" class="car" id="car" width="150px" height="150px">
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Copyright &copy; Move Car <span id="datetime"></span></p>
+        </footer>
+   
+</body>
+</html>
