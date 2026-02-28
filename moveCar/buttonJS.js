@@ -28,5 +28,5 @@ intervalValue = setInterval(() => {
 
 const gameStarted = () => {
     percentage.innerText = "Game Started";
-    window.location.href = "./moveCar.html";
+    window.location.href = "moveCar.html";
 }
